@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/exercicio.css" />
+    <title>Exercite</title>
+  </head>
+  <body>
+    <header>
+        <button onclick="goBack()">Voltar</button>
+    </header>
+    <div class="input">
+      <label>Selecionar Respirações</label>
+      <select class="breath-input">
+        <option value="3">3 Respirações</option>
+        <option value="5">5 Respirações</option>
+        <option value="7">7 Respirações</option>
+      </select>
+    </div>
+    <div class="circle-wrap">
+      <div class="circle-outline"></div>
+      <div class="circle-progress"></div>
+    </div>
+    <p class="breaths">Respirações restantes: <span class="breaths-text">3</span></p>
+    <p class="instructions">Você está pronto para começar a respirar?</p>
+    <button class="start">Começar</button>
+    <script src="./assets/js/exercicio.js"></script>
+  </body>
+</html>
