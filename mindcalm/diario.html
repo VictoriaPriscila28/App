@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link>
+    <title>Diário de Emoçôes</title>
+    <link rel="stylesheet" href="./assets/css/diario.css">
+</head>
+<body>
+    <header class="text-center">
+        <button onclick="goBack()">Voltar<br></button>
+        <h2>Crie o seu diário</h2>
+    </header>
+        <div class="wropper text-center">
+            <textarea id="txt" rows="3" placeholder="Como você está se sentindo?"></textarea>
+           <div class="text-l">
+            <button onclick="getRs()">Criar</button>
+            <button onclick="loadHistory()">Carregar Histórico</button>
+           </div>
+        </div>
+            
+        <div id="rs" class="wropper"></div>
+    <script src="./assets/js/diario.js"></script>
+</body>
+</html>
