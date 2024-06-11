@@ -1,0 +1,27 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "mindcalmpwa2.netlify",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "mindcalmpwa2.netlify",
+  "start_url": "index.html",
+  "theme_color": "#458ff6",
+  "description": "Pwa desenvolvido para a apresentação na semana do projetai.",
+  "icons": [
+
+    {
+      "src": "assets/images/AppImages/android/android-launchericon-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/AppImages/android/android-launchericon-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
