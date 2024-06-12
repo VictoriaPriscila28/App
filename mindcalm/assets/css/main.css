@@ -85,7 +85,7 @@ button{
     color: var(--clr-white);
 }
 .navbar{
-    padding: 56px 0 80px 0;
+    padding: 56px 0 60px 0;
 }
 .brand-and-toggler{
     width: 100%;
@@ -154,10 +154,73 @@ button{
     top: calc(56px + 41px + 63px);
     left: 0;
 }
-.element-one img{
-    width: 60px;
+/* Bottom nav container */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--clr-blue);
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+/* Bottom nav content */
+.bottom-nav .nav-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Alterado de 'space-around' para 'space-between' */
+    align-items: center;
+}
+  
+/* Nav item adjustments for bottom nav */
+.bottom-nav .nav-item {
+    flex: 1;
+    text-align: center;
+}
+  
+/* Nav link adjustments for bottom nav */
+.bottom-nav .nav-link {
+    font-weight: 400;
+    font-size: 12px; /* Reduzindo o tamanho da fonte */
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+  
+.bottom-nav .nav-link i {
+    font-size: 18px; /* Reduzindo o tamanho do ícone */
+    margin-bottom: 2px;
+}
+  
+.bottom-nav .nav-link:hover {
+    opacity: 0.9;
+}
+  
+.bottom-nav .nav-link.nav-active {
+    position: relative;
+    color: var(--clr-white);
+    font-weight: 700;
+    opacity: 1;
+}
+  
+.bottom-nav .nav-link.nav-active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: var(--clr-white);
 }
 
+
+  
 /* banner */
 .banner-title{
     font-size: 48px;

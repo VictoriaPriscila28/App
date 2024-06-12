@@ -16,6 +16,9 @@
         <link rel = "stylesheet" href = "assets/css/utilities.css" />
         <!-- normalize.css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#458ff6">
+     
 
     
        
@@ -25,6 +28,7 @@
             <!-- header -->
             <header class = "header">
                 <nav class = "navbar">
+                    
                     <div class="container">
                         <div class="navbar-content d-flex justify-content-between align-items-center">
                             <div class = "brand-and-toggler d-flex align-items-center justify-content-between">
@@ -32,36 +36,10 @@
                                     <span class="brand-shape d-inline-block text-white">M</span>
                                     <span class="brand-text fw-7">MindCalm</span>
                                 </a>
-                                <button type = "button" class = "d-none navbar-show-btn">
-                                    <i class = "fas fa-bars"></i>
-                                </button>
-                            </div>
-
-                            <div class = "navbar-box">
-                                <button type = "button" class = "navbar-hide-btn">
-                                    <i class = "fas fa-times"></i>
-                                </button>
-
-                                <ul class = "navbar-nav d-flex align-items-center">
-                                    <li class = "nav-item">
-                                        <a href = "index.html" class = "nav-link text-white nav-active text-nowrap">Início</a>
-                                    </li>
-                                    <li class = "nav-item">
-                                        <a href = "clinica.html" class = "nav-link text-white text-nowrap">Ache uma clínica</a>
-                                    </li>
-                                    <li class = "nav-item">
-                                        <a href = "chat.html" class = "nav-link text-white text-nowrap">Chat</a>
-                                    </li>
-                                    <li class = "nav-item">
-                                        <a href = "exercicios.html"class= "nav-link text-white text-nowrap">Exercícios</a>
-                                    </li>
-                                    <li class = "nav-item">
-                                        <a href = "login.html" class = "nav-link text-white text-nowrap" style="color: red;">Sair</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                
                         </div>
                     </div>
+                    
                 </nav>
 
                 <div class="element-one">
@@ -87,7 +65,6 @@
                 </div>
             </header>
             <!-- end of header -->
-
             <main>
                 <section class = "sc-services">
                     <div class = "services-shape">
@@ -355,23 +332,42 @@
                 </section>!-->
             </main>
 
-
-                <div class = "footer-element-1">
-                    <img src = "assets/images/element-img-4.png" alt = "">
-                </div>
-                <div class = "footer-element-2">
-                    <img src = "assets/images/element-img-5.png" alt = "">
-                </div>
-            </footer>
+         <!-- Bottom Navigation com ícones -->
+     <nav class="bottom-nav">
+        <div class="nav-content">
+            <div class="nav-item">
+                <a href="inicio.html" class="nav-link nav-active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="clinica.html" class="nav-link ">
+                    <i class="fas fa-clinic-medical"></i>
+                    <span>Clínicas</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="chat.html" class="nav-link ">
+                    <i class="fas fa-comments"></i>
+                    <span>Chat</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="exercicios.html" class="nav-link ">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>Exercícios</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="conta.html" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Conta</span>
+                </a>
+            </div>
         </div>
-        
-
-
-
-
-
-
-
+    </nav>
+     
         <!-- jquery cdn -->
         <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
         <!-- owl carousel -->

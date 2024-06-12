@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
     <link rel="stylesheet" href="./assets/css/exercicio.css" />
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#458ff6">
+     
 
    
     
@@ -12,7 +17,7 @@
   </head>
   <body>
     <header>
-        <button onclick="goBack()">Voltar</button>
+        
     </header>
     <div class="input">
       <label>Selecionar Respirações</label>
@@ -29,6 +34,41 @@
     <p class="breaths">Respirações restantes: <span class="breaths-text">3</span></p>
     <p class="instructions">Você está pronto para começar a respirar?</p>
     <button class="start">Começar</button>
+     <!-- Bottom Navigation com ícones -->
+     <nav class="bottom-nav">
+      <div class="nav-content">
+          <div class="nav-item">
+              <a href="inicio.html" class="nav-link ">
+                  <i class="fas fa-home"></i>
+                  <span>Home</span>
+              </a>
+          </div>
+          <div class="nav-item">
+              <a href="clinica.html" class="nav-link ">
+                  <i class="fas fa-clinic-medical"></i>
+                  <span>Clínicas</span>
+              </a>
+          </div>
+          <div class="nav-item">
+              <a href="chat.html" class="nav-link">
+                  <i class="fas fa-comments"></i>
+                  <span>Chat</span>
+              </a>
+          </div>
+          <div class="nav-item">
+              <a href="exercicios.html" class="nav-link nav-active">
+                  <i class="fas fa-dumbbell"></i>
+                  <span>Exercícios</span>
+              </a>
+          </div>
+          <div class="nav-item">
+              <a href="conta.html" class="nav-link">
+                  <i class="fas fa-user"></i>
+                  <span>Conta</span>
+              </a>
+          </div>
+      </div>
+  </nav>
     <script src="./assets/js/exercicio.js"></script>
   </body>
 </html>

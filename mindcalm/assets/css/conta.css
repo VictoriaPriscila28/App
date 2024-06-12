@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+:root{
+    --clr-blue: #458ff6;
+    --clr-black: #000;
+    --clr-white: #fff;
+    --clr-gray: #7d7987;
+    --clr-dark-blue: #233348;
+    --clr-dark-purple: #1f1534;
+    --font-family-mulish: 'Mulish', sans-serif;
+    --transition-default: all 300ms ease-in-out;
+}
+.profile-image {
+    max-width: 100px; /* Defina o tamanho máximo da largura */
+    max-height: 100px; /* Defina o tamanho máximo da altura */
+  }
+  
+
+
+/* Bottom nav container */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--clr-blue);
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Bottom nav content */
+  .bottom-nav .nav-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Nav item adjustments for bottom nav */
+  .bottom-nav .nav-item {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Nav link adjustments for bottom nav */
+  .bottom-nav .nav-link {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .bottom-nav .nav-link i {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+  
+  .bottom-nav .nav-link:hover {
+    opacity: 0.9;
+  }
+  
+  .bottom-nav .nav-link.nav-active {
+    position: relative;
+    color: var(--clr-white);
+    font-weight: 700;
+    opacity: 1;
+  }
+  
+  .bottom-nav .nav-link.nav-active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: var(--clr-white);
+  }
+  
